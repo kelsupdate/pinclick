@@ -30,7 +30,7 @@ export default function ValidatePayments() {
   const [paymentDetails, setPaymentDetails] = useState({})
   const [messageError, setMessageError] = useState(false)
   useEffect(() => {
-    fetch('https://gist.githubusercontent.com/kelsupdate/8340a8cb5d0037044866cf74f01b67b7/raw/dba4d672d368642041746c2a4405c99eb80205d6/gistfile1.txt')
+    fetch('https://gist.githubusercontent.com/kelsupdate/e851b18d6ec002920d7993da8cb4276f/raw/a605ed815aac2a17c38eb6d859dea012dc0d5b47/gistfile1.txt')
       .then(response => response.json())
       .then((data) => (
         setPackageItem(data.surveyPlans[location.state.index]), setPaymentDetails(data.mpesaPaymentDetails), setProgress(false)
